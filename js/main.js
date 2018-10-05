@@ -9,8 +9,4 @@ var x = setInterval(function () {
   var seconds = Math.floor((distance % (1000 * 60)) / 1000);
   document.querySelector(".timer__left").innerHTML = days + " : " + hours + " : "
     + minutes + " : " + seconds;
-  if (distance < 0) {
-    clearInterval(x);
-    document.getElementById("demo").innerHTML = "EXPIRED";
-  }
 }, 400);
